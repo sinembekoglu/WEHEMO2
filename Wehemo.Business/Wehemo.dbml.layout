@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="Wehemo">
+  <DataContextMoniker Name="/WehemoDataContext" />
+  <nestedChildShapes>
+    <classShape Id="f17c081d-98ac-49f5-a033-5e325f0396f1" absoluteBounds="0.5, 1, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/WehemoDataContext/CUSTOMER" />
+      <nestedChildShapes>
+        <elementListCompartment Id="48f03f9e-8531-4b0d-ba2a-6338e72e736c" absoluteBounds="0.51500000000000012, 1.46, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="1c0207df-f1bd-439f-b361-538d1e43e591" absoluteBounds="2.625, 0.5, 2, 1.1939925130208333">
+      <DataClassMoniker Name="/WehemoDataContext/STATUS_CODE" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6604d84a-8221-4871-9873-5d64fb5c5637" absoluteBounds="2.6399999999999997, 0.96, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="5ffa2b3a-412b-4109-97ec-5b7bf6d49958" absoluteBounds="7.375, 1, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/WehemoDataContext/TEST" />
+      <nestedChildShapes>
+        <elementListCompartment Id="bf778725-ec93-45e1-91e0-3dea243cc491" absoluteBounds="7.39, 1.46, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.5 : 2.64829752604167); (7.375 : 2.64829752604167)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/WehemoDataContext/CUSTOMER/CUSTOMER_TEST" />
+      <nodes>
+        <classShapeMoniker Id="f17c081d-98ac-49f5-a033-5e325f0396f1" />
+        <classShapeMoniker Id="5ffa2b3a-412b-4109-97ec-5b7bf6d49958" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="a293ac6e-2ceb-4195-81f6-6f5b2cbb9cdd" absoluteBounds="4.875, 0.5, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/WehemoDataContext/TEST_RESULT" />
+      <nestedChildShapes>
+        <elementListCompartment Id="85e34cc5-25f3-448e-abc1-f7229752ff8f" absoluteBounds="4.89, 0.96, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(4.625 : 1.09699625651042); (4.875 : 1.09699625651042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/WehemoDataContext/STATUS_CODE/STATUS_CODE_TEST_RESULT" />
+      <nodes>
+        <classShapeMoniker Id="1c0207df-f1bd-439f-b361-538d1e43e591" />
+        <classShapeMoniker Id="a293ac6e-2ceb-4195-81f6-6f5b2cbb9cdd" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(7.375 : 1.53929768880208); (6.875 : 1.53929768880208)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/WehemoDataContext/TEST/TEST_TEST_RESULT" />
+      <nodes>
+        <classShapeMoniker Id="5ffa2b3a-412b-4109-97ec-5b7bf6d49958" />
+        <classShapeMoniker Id="a293ac6e-2ceb-4195-81f6-6f5b2cbb9cdd" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
